@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-11-26T03:26:35.020483+00:00",
+  "seed": 42,
+  "data_file": "data/raw/synthetic_clinical_dataset.csv",
+  "data_sha256": "bee99ea6e73b263a19402172cd61dc012089e1dccdd2ba13c43d12722e7a988b",
+  "n_rows": 10000,
+  "split_sizes": {
+    "train": 6400,
+    "val": 1600,
+    "test": 2000,
+    "trainval": 8000
+  },
+  "selected_model": "logistic_regression",
+  "threshold": 0.4832813498558447,
+  "candidates": [
+    "logistic_regression",
+    "hist_gradient_boosting"
+  ],
+  "library_versions": {
+    "python": "3.14.3",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5",
+    "scikit_learn": "1.9.1",
+    "mlflow": "3.18.0"
+  },
+  "model_artifact": "artifacts/model.joblib"
+}

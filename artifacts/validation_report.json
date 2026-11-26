@@ -1,0 +1,387 @@
+{
+  "n_rows": 10000,
+  "mode": "strict",
+  "ok": true,
+  "n_errors": 0,
+  "n_warnings": 0,
+  "checks": [
+    {
+      "check": "column_present[patient_id]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[age]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[sex]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[bmi]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[systolic_bp]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[diastolic_bp]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[glucose]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[cholesterol]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[creatinine]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[diabetes]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[hypertension]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[diagnosis]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "column_present[readmission_30d]",
+      "passed": true,
+      "level": "error",
+      "detail": "present",
+      "count": 0
+    },
+    {
+      "check": "no_unexpected_columns",
+      "passed": true,
+      "level": "warning",
+      "detail": "none",
+      "count": 0
+    },
+    {
+      "check": "dtype[patient_id]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[patient_id]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[age]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[age]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "range[age]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[sex]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "allowed[sex]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[bmi]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[bmi]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "range[bmi]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[systolic_bp]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[systolic_bp]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "range[systolic_bp]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[diastolic_bp]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[diastolic_bp]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "range[diastolic_bp]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[glucose]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[glucose]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "range[glucose]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[cholesterol]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[cholesterol]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "range[cholesterol]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[creatinine]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[creatinine]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "range[creatinine]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[diabetes]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[diabetes]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "allowed[diabetes]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[hypertension]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[hypertension]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "allowed[hypertension]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_missing[diagnosis]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "allowed[diagnosis]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[readmission_30d]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "target_present[readmission_30d]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "allowed[readmission_30d]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "dtype[mortality]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "allowed[mortality]",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_duplicate_rows",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    },
+    {
+      "check": "no_duplicate_ids",
+      "passed": true,
+      "level": "error",
+      "detail": "ok",
+      "count": 0
+    }
+  ]
+}

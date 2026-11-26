@@ -1,0 +1,41 @@
+{
+  "model": "logistic_regression",
+  "threshold": 0.4832813498558447,
+  "n_test": 2000,
+  "test_positive_rate": 0.139,
+  "roc_auc": 0.6019289098338053,
+  "pr_auc": 0.20288677509330189,
+  "precision": 0.19176319176319176,
+  "recall": 0.5359712230215827,
+  "f1": 0.2824644549763033,
+  "brier": 0.23912211055600607,
+  "confusion_matrix": {
+    "tn": 1094,
+    "fp": 628,
+    "fn": 129,
+    "tp": 149
+  },
+  "fairness_by_sex": {
+    "Female": {
+      "n": 1030,
+      "positive_rate": 0.14466019417475728,
+      "recall": 0.5234899328859061,
+      "precision": 0.1989795918367347,
+      "selection_rate": 0.38058252427184464
+    },
+    "Male": {
+      "n": 945,
+      "positive_rate": 0.13227513227513227,
+      "recall": 0.568,
+      "precision": 0.18489583333333334,
+      "selection_rate": 0.40634920634920635
+    },
+    "Other": {
+      "n": 25,
+      "positive_rate": 0.16,
+      "recall": 0.0,
+      "precision": 0.0,
+      "selection_rate": 0.04
+    }
+  }
+}
