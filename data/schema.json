@@ -1,0 +1,23 @@
+{
+  "_comment": "Data contract for the synthetic clinical dataset. validate.py checks every incoming batch against this. Ranges are clinically plausible bounds, wider than the values observed in the sample, so genuine variation passes while corrupt values (for example a negative blood pressure or an age of 500) are caught.",
+  "columns": {
+    "patient_id": {"dtype": "int", "required": true, "unique": true, "role": "id"},
+    "age": {"dtype": "int", "required": true, "min": 0, "max": 120, "role": "feature"},
+    "sex": {"dtype": "str", "required": true, "allowed": ["Female", "Male", "Other"], "role": "feature"},
+    "bmi": {"dtype": "float", "required": true, "min": 10.0, "max": 70.0, "role": "feature"},
+    "systolic_bp": {"dtype": "float", "required": true, "min": 70.0, "max": 250.0, "role": "feature"},
+    "diastolic_bp": {"dtype": "float", "required": true, "min": 40.0, "max": 150.0, "role": "feature"},
+    "glucose": {"dtype": "float", "required": true, "min": 40.0, "max": 500.0, "role": "feature"},
+    "cholesterol": {"dtype": "float", "required": true, "min": 80.0, "max": 400.0, "role": "feature"},
+    "creatinine": {"dtype": "float", "required": true, "min": 0.2, "max": 15.0, "role": "feature"},
+    "diabetes": {"dtype": "int", "required": true, "allowed": [0, 1], "role": "feature"},
+    "hypertension": {"dtype": "int", "required": true, "allowed": [0, 1], "role": "feature"},
+    "diagnosis": {"dtype": "str", "required": true, "allowed": ["Normal", "Pneumonia", "Heart Failure", "Sepsis"], "role": "feature"},
+    "readmission_30d": {"dtype": "int", "required_for_training": true, "allowed": [0, 1], "role": "target"},
+    "mortality": {"dtype": "int", "required": false, "allowed": [0, 1], "role": "excluded_leakage"}
+  },
+  "row_rules": {
+    "no_duplicate_rows": true,
+    "no_duplicate_ids": true
+  }
+}

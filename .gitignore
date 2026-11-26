@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environment (machine specific, never committed)
+.venv/
+venv/
+env/
+
+# Build and transient logs
+*.log
+_build_*
+build/
+dist/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# MLflow local run store: kept local, not committed, because its metadata embeds
+# absolute machine paths. The committed structured evidence (artifacts/*.json) plus an
+# MLflow screenshot in the appendix cover experiment tracking instead.
+mlruns/
+
+# Committed on purpose: artifacts/ (model, metrics, reports) and reports/figures/.
+# They are the evidence that the pipeline ran, which the appendix refers to.

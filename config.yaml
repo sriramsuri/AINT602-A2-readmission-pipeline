@@ -1,0 +1,51 @@
+# AINT602 Assessment 2 - MLOps pipeline configuration
+# Single source of truth for paths, target, features, split and model settings.
+# Every stage reads this file, so a run is defined by (code + this config + data).
+
+seed: 42
+
+data:
+  raw_path: data/raw/synthetic_clinical_dataset.csv
+  schema_path: data/schema.json
+
+task:
+  target: readmission_30d
+  id_column: patient_id
+  positive_label: 1
+  # Columns deliberately kept out of the model, each with a recorded reason.
+  excluded:
+    patient_id: "Identifier. Unique per row and not clinically predictive."
+    mortality: "Leakage and competing risk. A patient who dies cannot be readmitted, and mortality can be recorded after discharge, so it is not legitimately available at prediction time."
+
+features:
+  numeric: [age, bmi, systolic_bp, diastolic_bp, glucose, cholesterol, creatinine]
+  binary: [diabetes, hypertension]
+  categorical: [sex, diagnosis]
+
+split:
+  test_size: 0.20      # held-out test fraction of the full dataset
+  val_size: 0.20       # validation fraction taken from the non-test data
+  stratify: true       # preserve the readmission rate in every split
+
+model:
+  baseline: most_frequent               # DummyClassifier strategy
+  candidates: [logistic_regression, hist_gradient_boosting]
+  decision_threshold: null              # null means choose it on validation data during training
+  threshold_objective: f1               # operating point is selected to maximise F1 on validation data
+
+mlflow:
+  experiment_name: readmission_30d
+  tracking_uri: file:./mlruns
+
+fairness:
+  slice_column: sex                     # error rates are reported per group of this column
+
+paths:
+  model_out: artifacts/model.joblib
+  metrics_out: artifacts/metrics.json
+  run_meta_out: artifacts/run_metadata.json
+  validation_out: artifacts/validation_report.json
+  eval_out: artifacts/evaluation_report.json
+  predictions_out: artifacts/predictions.csv
+  sample_input: data/sample_new_patients.csv
+  figures_dir: reports/figures
