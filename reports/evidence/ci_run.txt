@@ -1,0 +1,14 @@
+﻿
+✓ main CI · 45749298257
+Triggered via push about 7 minutes ago
+
+JOBS
+✓ checks in 1m3s (ID 139672959498)
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+checks: .github#2
+
+
+For more information about the job, try: gh run view --job=139672959498
+View this run on GitHub: https://github.com/sriramsuri/AINT602-A2-readmission-pipeline/actions/runs/45749298257

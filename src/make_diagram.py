@@ -89,10 +89,10 @@ def build(path_png, path_svg) -> None:
          "#fbe1e1")
     _arrow(ax, (centers[-1][0] + w / 2, centers[-1][1]), (tx - 0.17, my), style="--", color="#b5534f")
 
-    ax.text(0.5, 0.985, "30-Day Readmission Prediction - Pipeline Architecture",
+    ax.text(0.5, 0.99, "30-Day Readmission Prediction Pipeline",
             ha="center", va="top", fontsize=12, fontweight="bold")
-    fig.savefig(path_png, dpi=160, bbox_inches="tight")
-    fig.savefig(path_svg, bbox_inches="tight")
+    fig.savefig(path_png, dpi=160, bbox_inches="tight", pad_inches=0.3)
+    fig.savefig(path_svg, bbox_inches="tight", pad_inches=0.3)
     plt.close(fig)
 
 

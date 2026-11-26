@@ -1,0 +1,7 @@
+﻿c770af2 Add trained model, metrics, figures and evaluation evidence
+70bb984 Add tests, run automation and GitHub Actions CI
+306494a Add evaluation, batch prediction, sample data and architecture diagram
+ba27741 Add training, benchmarking, threshold selection and MLflow tracking
+82eaf63 Add leakage-safe feature engineering and model pipeline
+e17e4d2 Add data ingestion and schema-driven validation
+5fc43a3 Initialise project: config, data schema, dataset and README

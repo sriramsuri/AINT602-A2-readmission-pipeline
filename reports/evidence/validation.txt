@@ -1,0 +1,3 @@
+INFO ingest: Loaded 10000 rows and 14 columns from synthetic_clinical_dataset.csv
+rows=10000 mode=strict ok=True errors=0 warnings=0
+report written to C:\Users\srira\OneDrive\Desktop\S00213739_AINT602_A2_MLOps\artifacts\validation_report.json

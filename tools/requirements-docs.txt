@@ -1,0 +1,13 @@
+# Dependencies for building the report and AI usage statement in tools/.
+# Kept separate from the pipeline's requirements.txt so the pipeline and its CI stay lean.
+#
+#   python -m pip install -r tools/requirements-docs.txt
+#   python tools/build_report.py          # -> reports/*.docx
+#   python tools/build_ai_statement.py    # -> reports/*.docx
+#   python tools/build_pdf.py             # -> reports/*.pdf (prints via system Microsoft Edge)
+#
+# The PDF step drives the Microsoft Edge already installed on the machine through
+# Playwright's "msedge" channel, so no browser binary is downloaded.
+
+python-docx==1.2.0
+playwright==1.65.2
